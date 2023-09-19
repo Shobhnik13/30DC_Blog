@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -15,8 +16,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.className} bg-gradient-to-r from-black via-teal-950 to-black`}>
+        <Navbar/>
+        <main className='max-w-3xl mx-auto pt-4 px-4 sm:px-6 lg:px-8'>
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
