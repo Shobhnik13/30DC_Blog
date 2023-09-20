@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} bg-gradient-to-r from-black via-teal-950 to-black`}>
         <Navbar/>
-        <main className='max-w-3xl mx-auto pt-4 px-4 sm:px-6 lg:px-8'>
+        <main className='max-w-3xl mx-auto pt-4 px-4 sm:px-6 lg:mx-auto'>
           {children}
         </main>
       </body>

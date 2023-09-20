@@ -1,45 +1,45 @@
-export default{
-    name:'post',
-    type:'document',
-    title:'Post',
-    fields:[
-        {
-            name:'title',
-            type:'string',
-            title:'Title',
+export default {
+    name: 'post',
+    type: 'document',
+    title: 'Post',
+    fields: [
+      {
+        name: 'title',
+        type: 'string',
+        title: 'Title',
+      },
+      {
+        name: 'overview',
+        type: 'string',
+        title: 'Overview',
+      },
+      {
+        name: 'slug',
+        type: 'slug',
+        title: 'Slug',
+        options: {
+          source: 'title',
         },
-        {
-            name:'overview',
-            type:'string',
-            title:'Overview',
-        },
-        {
-            name:'slug',
-            type:'slug',
-            title:'Slug',
-            options:{
-                source:'title',
-            }
-        },
-        {
-            name:'content',
-            type:'array',
-            title:'Content',
-            of:[
-                {
-                    type:'block',
-                },
-                {
-                    type:'image',
-                    fields:[
-                        {
-                        name:'alt',
-                        type:'text',
-                        title:'Alternative Text',
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
+      },
+      {
+        name: 'content',
+        type: 'array',
+        title: 'Content',
+        of: [
+          {
+            type: 'block',
+          },
+          {
+            type: 'image',
+            fields: [
+              {
+                type: 'text',
+                name: 'alt',
+                title: 'Alternative Text',
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  }
