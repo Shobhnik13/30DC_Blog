@@ -37,7 +37,7 @@ export default async function Home() {
         <div className="w-[55%]">
           <div className=" gap-y-2 flex flex-col justify-center  ">
               <h3 className=" text-2xl font-bold leading-8 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-blue-300 to-blue-200">{post.title}</h3>
-              <p className="text-base prose line-clamp-2 text-transparent bg-clip-text bg-gradient-to-r from-gray-400 via-gray-300 to-gray-400">{post.overview}</p>
+              <p className="text-base font-semibold prose line-clamp-2 text-transparent bg-clip-text bg-gradient-to-r from-gray-400 via-gray-300 to-gray-400">{post.overview}</p>
               
           </div>
         </div>
